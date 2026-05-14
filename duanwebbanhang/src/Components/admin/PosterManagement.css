@@ -1,0 +1,86 @@
+/* src/Components/admin/PosterManagement.css */
+
+.poster-management {
+  padding: 20px;
+}
+
+.poster-management .ant-card {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+.poster-management .ant-table {
+  background: white;
+  border-radius: 4px;
+}
+
+.poster-management .ant-table-thead > tr > th {
+  background-color: #fafafa;
+  font-weight: 600;
+  border-bottom: 2px solid #f0f0f0;
+}
+
+.poster-management .ant-btn-sm {
+  padding: 0 8px;
+  font-size: 12px;
+}
+
+.poster-management .ant-empty {
+  padding: 50px 20px;
+}
+
+.poster-management .ant-modal-header {
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.poster-management .ant-form-item-label > label {
+  font-weight: 500;
+}
+
+.poster-management img {
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+}
+
+.poster-management .ant-upload {
+  display: inline-block;
+}
+
+.poster-management .ant-upload-wrapper {
+  width: 100%;
+}
+
+/* Action buttons styling */
+.poster-management .action-buttons {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.poster-management .edit-btn {
+  min-width: 70px;
+  font-weight: 500;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+}
+
+.poster-management .edit-btn:hover {
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.12);
+  transform: translateY(-1px);
+}
+
+.poster-management .delete-btn {
+  min-width: 70px;
+  font-weight: 500;
+  box-shadow: 0 1px 3px rgba(255, 77, 79, 0.15);
+  transition: all 0.3s ease;
+}
+
+.poster-management .delete-btn:hover:not(:disabled) {
+  box-shadow: 0 2px 6px rgba(255, 77, 79, 0.25);
+  transform: translateY(-1px);
+}
+
+.poster-management .delete-btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}

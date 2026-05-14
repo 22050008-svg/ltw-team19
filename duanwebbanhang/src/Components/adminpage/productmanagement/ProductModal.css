@@ -1,0 +1,171 @@
+/* ProductModal.css */
+
+.product-form-card {
+  border: 1px solid #e8e8e8;
+  border-radius: 8px;
+  background: white;
+}
+
+.product-form-card .ant-card-head {
+  background: linear-gradient(135deg, #f5f7fa 0%, #e8f0f9 100%);
+  border-bottom: 2px solid #1890ff;
+  padding: 12px 16px;
+}
+
+.product-form-card .ant-card-head-title {
+  font-size: 16px;
+  font-weight: 600;
+  color: #262626;
+}
+
+.product-form-card .ant-card-body {
+  padding: 16px;
+}
+
+/* Form Item Styles */
+.ant-form-item-label > label {
+  font-weight: 500;
+  color: #262626;
+}
+
+.ant-form-item-label > label::after {
+  content: '';
+}
+
+.ant-form-item-label > label.ant-form-item-required::after {
+  content: ' *';
+  color: #ff4d4f;
+  font-weight: bold;
+}
+
+/* Input Sizes */
+.ant-input-lg,
+.ant-input-number-lg,
+.ant-select-lg {
+  min-height: 40px;
+  border-radius: 4px;
+}
+
+/* AutoComplete Styling */
+.ant-select-selector {
+  border-radius: 4px;
+  border: 1px solid #d9d9d9;
+}
+
+.ant-select:hover .ant-select-selector,
+.ant-select-focused .ant-select-selector {
+  border-color: #40a9ff;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .product-form-card .ant-card-body {
+    padding: 12px;
+  }
+
+  .ant-form-item {
+    margin-bottom: 12px;
+  }
+
+  .ant-form-item-label {
+    padding-bottom: 4px;
+  }
+}
+
+/* Modal Body Scroll */
+.ant-modal-body {
+  max-height: 75vh;
+  overflow-y: auto;
+}
+
+.ant-modal-body::-webkit-scrollbar {
+  width: 6px;
+}
+
+.ant-modal-body::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 10px;
+}
+
+.ant-modal-body::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 10px;
+}
+
+.ant-modal-body::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+/* Card Styling */
+.ant-card {
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
+}
+
+.ant-card:hover {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
+  transition: box-shadow 0.3s ease;
+}
+
+/* Success Icon */
+.anticon-check-circle {
+  margin-left: auto;
+}
+
+/* Button Styling */
+.ant-btn-primary {
+  min-width: 80px;
+}
+
+/* Divider */
+.ant-divider {
+  margin: 16px 0;
+}
+
+/* Layout improvements */
+.ant-row {
+  gap: 0;
+}
+
+/* Center align for col in rows */
+.ant-col {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+/* Code Editor Container */
+.code-editor-wrapper {
+  border: 1px solid #d9d9d9;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+/* Ant Collapse (for advanced section) */
+.ant-collapse {
+  border: 1px solid #d9d9d9;
+  border-radius: 4px;
+}
+
+.ant-collapse-header {
+  padding: 12px 16px !important;
+  font-weight: 500;
+}
+
+/* Dark mode support (if needed) */
+@media (prefers-color-scheme: dark) {
+  .product-form-card {
+    background: #141414;
+  }
+
+  .product-form-card .ant-card-head {
+    background: #262626;
+  }
+
+  .ant-form-item-label > label {
+    color: #e8e8e8;
+  }
+
+  .product-form-card .ant-card-head-title {
+    color: #e8e8e8;
+  }
+}

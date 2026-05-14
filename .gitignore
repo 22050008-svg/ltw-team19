@@ -1,0 +1,11 @@
+# Bỏ qua thư viện của Node.js (FE & BE)
+node_modules/
+
+# Bỏ qua file môi trường
+.env
+.env.local
+
+# Bỏ qua các file log và build
+dist/
+build/
+*.log

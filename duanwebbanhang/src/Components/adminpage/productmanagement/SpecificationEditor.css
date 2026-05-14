@@ -1,0 +1,12 @@
+.specification-editor {
+  padding: 16px;
+}
+
+.specification-editor .ant-table-small {
+  font-size: 12px;
+}
+
+.specification-editor .ant-input,
+.specification-editor .ant-input-number {
+  font-size: 14px;
+}

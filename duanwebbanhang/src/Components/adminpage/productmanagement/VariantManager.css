@@ -1,0 +1,121 @@
+/* VariantManager Styles */
+
+.variant-manager-card {
+  background: #fafafa;
+}
+
+.sku-text {
+  font-family: 'Courier New', monospace;
+  font-weight: 500;
+  color: #262626;
+}
+
+.attributes-display {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+}
+
+.attr-badge {
+  display: inline-block;
+  padding: 2px 8px;
+  background: #e6f7ff;
+  border: 1px solid #91d5ff;
+  border-radius: 2px;
+  font-size: 12px;
+  color: #0050b3;
+}
+
+.price-text {
+  color: #d4380d;
+  font-weight: 500;
+}
+
+.stock-text {
+  color: #389e0d;
+  font-weight: 500;
+}
+
+/* Variant Detail Drawer */
+.variant-detail {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.detail-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 12px;
+  background: #fafafa;
+  border-radius: 4px;
+}
+
+.detail-item strong {
+  color: #262626;
+  min-width: 100px;
+}
+
+.detail-item span {
+  color: #595959;
+  word-break: break-all;
+}
+
+.attributes-detail {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-top: 8px;
+}
+
+.attr-detail {
+  display: flex;
+  gap: 8px;
+  padding: 8px;
+  background: white;
+  border-left: 3px solid #1890ff;
+  border-radius: 2px;
+}
+
+.attr-name {
+  font-weight: 600;
+  color: #1890ff;
+  min-width: 80px;
+}
+
+.attr-value {
+  color: #262626;
+  flex: 1;
+}
+
+/* Table Responsive */
+.ant-table-small {
+  font-size: 12px;
+}
+
+.ant-table-small .ant-table-cell {
+  padding: 8px;
+}
+
+/* Modal Styles */
+.ant-modal-body {
+  padding: 24px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .attributes-display {
+    flex-direction: column;
+  }
+
+  .attr-badge {
+    display: block;
+    width: 100%;
+  }
+
+  .detail-item {
+    flex-direction: column;
+    gap: 8px;
+  }
+}

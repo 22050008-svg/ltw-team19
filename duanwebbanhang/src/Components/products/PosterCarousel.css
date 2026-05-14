@@ -1,0 +1,145 @@
+/* src/Components/products/PosterCarousel.css */
+
+.poster-carousel-container {
+  width: 100%;
+  margin: 20px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.poster-carousel-wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 1200px;
+  background: #f5f5f5;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.poster-slide {
+  position: relative;
+  width: 100%;
+  height: 300px;
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  overflow: hidden;
+}
+
+.poster-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.poster-slide:hover .poster-image {
+  transform: scale(1.02);
+}
+
+.poster-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent);
+  padding: 30px 20px 20px;
+  color: white;
+}
+
+.poster-title {
+  margin: 0 0 8px 0;
+  font-size: 24px;
+  font-weight: 600;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.poster-description {
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.4;
+  opacity: 0.9;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+/* Navigation buttons */
+.carousel-nav-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+  background-color: rgba(0, 0, 0, 0.5) !important;
+  border-color: transparent !important;
+  transition: all 0.3s ease;
+}
+
+.carousel-nav-btn:hover {
+  background-color: rgba(0, 0, 0, 0.8) !important;
+}
+
+.carousel-prev-btn {
+  left: 16px;
+}
+
+.carousel-next-btn {
+  right: 16px;
+}
+
+/* Carousel dots */
+.poster-carousel-wrapper .ant-carousel-dots {
+  bottom: 16px;
+}
+
+.poster-carousel-wrapper .ant-carousel-dot {
+<<<<<<< HEAD
+  background-color: rgba(241, 236, 236, 0.5) !important;
+=======
+  background-color: rgba(255, 255, 255, 0.5) !important;
+>>>>>>> ac6dd00b72c6ee8bba8c78758ebd7d466978cee9
+}
+
+.poster-carousel-wrapper .ant-carousel-dot-active {
+  background-color: white !important;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .poster-slide {
+    height: 250px;
+  }
+
+  .poster-title {
+    font-size: 18px;
+  }
+
+  .poster-description {
+    font-size: 12px;
+  }
+
+  .carousel-nav-btn {
+    width: 36px !important;
+    height: 36px !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .poster-slide {
+    height: 200px;
+  }
+
+  .poster-title {
+    font-size: 16px;
+  }
+
+  .poster-description {
+    display: none;
+  }
+
+  .carousel-prev-btn,
+  .carousel-next-btn {
+    display: none;
+  }
+}
